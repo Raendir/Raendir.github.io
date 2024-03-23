@@ -143,9 +143,17 @@ Error message and password prompt
 
 <li>~Seek Ye First</li>
 
+<li>$:/config/NewJournal/Tags</li>
+
+<li>$:/config/NewJournal/Title</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/config/ShortcutInfo/save-tiddler</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info</li>
 
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
 
@@ -155,6 +163,8 @@ Error message and password prompt
 
 <li>$:/core/macros/tabs</li>
 
+<li>$:/core/ui/ViewTemplate/body</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/Import</li>
@@ -162,6 +172,14 @@ Error message and password prompt
 <li>$:/isEncrypted</li>
 
 <li>$:/layout</li>
+
+<li>$:/palette</li>
+
+<li>$:/plugins/telmiger/details/colours.css</li>
+
+<li>$:/plugins/telmiger/details/details.css</li>
+
+<li>$:/plugins/telmiger/details/details.js</li>
 
 <li>$:/SiteTitle</li>
 
@@ -175,11 +193,19 @@ Error message and password prompt
 
 <li>$:/state/tab--1963855381</li>
 
+<li>$:/state/tab--2074415172</li>
+
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab--86143343</li>
 
 <li>$:/state/tab--959111941</li>
+
+<li>$:/state/tab-1163638994</li>
+
+<li>$:/state/tab-1564035512</li>
+
+<li>$:/state/tab-1740748798</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -193,13 +219,19 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/theme</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
+
 <li>2021/02/23 - Initial Thoughts on Structure</li>
 
 <li>2021/02/27 - Ideas to look into</li>
+
+<li>2024, 3/23 Entry</li>
 
 <li>Acts 1</li>
 
@@ -230,6 +262,8 @@ Error message and password prompt
 <li>Library</li>
 
 <li>Malcolm Guite</li>
+
+<li>Raendir</li>
 
 <li>Richard Rohlin</li>
 
@@ -280,11 +314,23 @@ Error message and password prompt
 
 ''That is a good start. An honest one. We shall see if that is what you truly seek. But for now, I relent.''</pre>
 </div>
+<div created="20240323163348809" modified="20240323163355853" title="$:/config/NewJournal/Tags">
+<pre>[[Entry Log]]</pre>
+</div>
+<div created="20240323162221118" modified="20240323162501258" title="$:/config/NewJournal/Title">
+<pre>YYYY, MM/DD Entry</pre>
+</div>
+<div created="20240323161610843" modified="20240323161615621" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<pre>show</pre>
+</div>
 <div created="20210228045338929" modified="20210228045338929" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
 <div created="20210220234006942" modified="20210220234006942" title="$:/config/ShortcutInfo/save-tiddler">
 <pre>{{$:/language/Buttons/Save/Hint}}</pre>
+</div>
+<div created="20240323195458424" modified="20240323195458424" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info">
+<pre>show</pre>
 </div>
 <div created="20210220235714104" modified="20210220235714104" title="$:/config/WikiParserRules/Inline/wikilink">
 <pre>disable</pre>
@@ -10197,23 +10243,33 @@ Error message and password prompt
 \end
 </pre>
 </div>
-<div created="20210224002148597" modified="20210316021734631" title="$:/DefaultTiddlers">
+<div created="20240323192641046" modified="20240323192641046" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/body">
+<pre>&lt;$reveal tag=&quot;div&quot; class=&quot;tc-tiddler-body&quot; type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
+
+&lt;$list filter=&quot;[all[current]!has[plugin-type]!field:hide-body[yes]]&quot;&gt;
+
+&lt;$transclude&gt;
+
+&lt;$transclude tiddler=&quot;$:/language/MissingTiddler/Hint&quot;/&gt;
+
+&lt;/$transclude&gt;
+
+&lt;/$list&gt;
+
+&lt;/$reveal&gt;
+</pre>
+</div>
+<div created="20210224002148597" modified="20240323195950802" title="$:/DefaultTiddlers">
 <pre>[[The Gates]]
+[days[-30]!is[system]sort[created]tag[Entry Log]]
 [[~Seek Ye First]]</pre>
 </div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Alastair Roberts]]
-# [[C.S. Lewis]]
-# [[G.K. Chesterton]]
-# [[J.R.R. Tolkien]]
-# [[John Vervaeke]]
-# [[Jonathan Pageau]]
-# [[Jordan B. Peterson]]
-# [[Malcolm Guite]]
-# [[Richard Rohlin]]
-# [[Tom Holland]]</pre>
+# [[$:/plugins/telmiger/details/details.js]]
+# [[$:/plugins/telmiger/details/details.css]]
+# [[$:/plugins/telmiger/details/colours.css]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10221,26 +10277,350 @@ Error message and password prompt
 <div created="20210220233852164" modified="20210220233931715" title="$:/layout">
 <pre>$:/core/ui/PageTemplate</pre>
 </div>
+<div created="20240323161819829" modified="20240323162015995" title="$:/palette">
+<pre>$:/palettes/Twilight</pre>
+</div>
+<div created="20180925155320737" creator="Thomas Elmiger" modified="20240106124522075" modifier="Thomas Elmiger" tags="$:/tags/Stylesheet" title="$:/plugins/telmiger/details/colours.css">
+<pre>/* details and summary colours */
+
+details {
+   background-color: &lt;&lt;colour sidebar-tab-background-selected&gt;&gt;;
+   color: &lt;&lt;colour sidebar-tab-foreground-selected&gt;&gt;;
+}
+
+details summary {
+   background-color: &lt;&lt;colour sidebar-tab-background&gt;&gt;;
+   color: &lt;&lt;colour sidebar-tab-foreground&gt;&gt;;
+}
+
+details.notification summary {
+    background-color: &lt;&lt;colour notification-background&gt;&gt;;
+   color: &lt;&lt;colour notification-foreground&gt;&gt;;
+}
+
+details.warning summary {
+    background-color: #ffbbaf;
+    color: #000;
+}
+
+details.success summary {
+    background-color: #88edc5;
+    color: #000;
+}
+</pre>
+</div>
+<div created="20170122140815442" creator="Thomas Elmiger" modified="20180929131615369" modifier="Thomas Elmiger" tags="$:/tags/Stylesheet" title="$:/plugins/telmiger/details/details.css">
+<pre>/* details and summary */
+
+details {
+   transition: height 1s ease;
+   padding: 0 0.5em 0 0.66em;
+   margin-top: 0.66em;
+   margin-bottom: 0.66em;
+}
+
+details + details {
+   margin-top: -0.46em;
+}
+
+details[open] {
+   padding-bottom: 1em;
+}
+
+details:not([open]) { 
+   cursor: pointer;
+}
+
+details &gt; summary {
+   display: list-item;
+   margin: 0 -0.5em 0 -0.66em;
+   padding: 0.2em 0.5em 0.2em 0.66em;
+   padding-left: 1.76em;  /* adjust for indentation */
+   text-indent: -1.1em;
+   cursor: pointer;
+}
+
+details[open] &gt; summary {
+   margin-bottom: 1em;
+}
+
+details[open] &gt; *:first-child:not(summary) {
+   margin-top: 1em;
+}
+</pre>
+</div>
+<div created="20170124173619910" creator="Thomas Elmiger" modified="20180929212032187" modifier="Thomas Elmiger" module-type="widget" tags="Plugins" title="$:/plugins/telmiger/details/details.js" type="application/javascript">
+<pre>/*\
+title: $:/plugins/telmiger/details/details.js
+type: application/javascript
+module-type: widget
+
+Details widget v 0.8
+
+Will output an HTML 5 &lt;details&gt; section including a &lt;summary&gt;
+
+```
+	&lt;details&gt;
+		&lt;summary&gt;This sums it up&lt;/summary&gt; 
+		All the details follow here.
+	&lt;/details&gt;
+```
+
+|Parameter |Description |h
+|summary |Optional text to display as summary. Wins over field (see below). |
+|open |Optional initial state, set to &quot;open&quot; to show details on load. Defaults to &quot;&quot;. |
+|state |An optional TextReference containing the state. Wins over open. |
+|field |Optionally, the summary is taken from the field with this name in a given tiddler. Defaults to &quot;title&quot;. |
+|tiddler |Optional title of a tiddler to watch, connected to field. Defaults to current tiddler. |
+|class |Optional CSS classes to be assigned to the details tag. |
+
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+var Widget = require(&quot;$:/core/modules/widgets/widget.js&quot;).widget;
+
+var DetailsWidget = function(parseTreeNode,options) {
+	this.initialise(parseTreeNode,options);
+};
+
+/*
+Inherit from the base widget class
+*/
+DetailsWidget.prototype = new Widget();
+
+/*
+Render this widget into the DOM
+*/
+DetailsWidget.prototype.render = function(parent,nextSibling) {
+	// Save the parent dom node
+	this.parentDomNode = parent;
+	// Compute attributes
+	this.computeAttributes();
+	// Execute logic
+	this.execute();
+	// Create elements
+	this.detailsDomNode = this.document.createElement(&quot;details&quot;);
+	if(this.detailsClass !== &quot;&quot;) {
+		// this.detailsClass += &quot; &quot;;
+		// this.detailsClass += &quot;tc-details&quot;;
+		this.detailsDomNode.setAttribute(&quot;class&quot;,this.detailsClass);
+	}
+	if(this.detailsOpen == &quot;open&quot;) {
+		this.detailsDomNode.setAttribute(&quot;open&quot;,&quot;open&quot;);
+	}
+	if(this.detailsSummary !== &quot;&quot;) {
+		this.summaryDomNode = this.document.createElement(&quot;summary&quot;);
+		// this.summaryDomNode.setAttribute(&quot;class&quot;,&quot;tc-summary&quot;);
+		this.detailsDomNode.appendChild(this.summaryDomNode);
+		this.summaryDomNode.appendChild(this.document.createTextNode(this.detailsSummary));
+	}
+// register an event listener
+/* Maybe this can be reactivated later, see below.
+	if(this.detailsStateTitle) {
+		$tw.utils.addEventListeners(this.detailsDomNode,[
+			{name: &quot;toggle&quot;, handlerObject: this, handlerMethod: &quot;handleToggleEvent&quot;},
+		]);
+	}
+*/
+// As iOS mobile browsers lack support of toggle events on details 
+// we emulate the toggle event using click
+	if(this.detailsStateTitle &amp;&amp; this.summaryDomNode) {
+		$tw.utils.addEventListeners(this.summaryDomNode,[
+			{name: &quot;click&quot;, handlerObject: this, handlerMethod: &quot;handleToggleEvent&quot;},
+		]);
+	} else {
+		if(this.detailsStateTitle) {
+			$tw.utils.addEventListeners(this.detailsDomNode,[
+				{name: &quot;click&quot;, handlerObject: this, handlerMethod: &quot;handleToggleEvent&quot;},
+			]);
+		}
+	}
+	// Insert the details into the DOM and render any children
+	this.parentDomNode.insertBefore(this.detailsDomNode,nextSibling);
+	this.renderChildren(this.detailsDomNode,null);
+	this.domNodes.push(this.detailsDomNode);
+};
+
+/*
+Retrieve the value of the summary
+*/
+DetailsWidget.prototype.getSummary = function() {
+	var summary = &quot;&quot;;
+	if(this.summaryTitle === &quot;Tiddler not found&quot; &amp;&amp; this.summaryField === &quot;&quot;) {
+	// nothing defined: leave empty 
+		summary = &quot;&quot;;
+	} else {
+		// tiddler defined? use defined field or title
+		if(this.myTiddler) {
+			if(this.summaryField === &quot;title&quot; || this.summaryField === &quot;&quot;) {
+				summary = this.summaryTitle;
+			} else {
+				if(this.summaryField === &quot;text&quot;) {
+         		// getTiddlerText() triggers lazy loading of skinny tiddlers
+					summary = this.wiki.getTiddlerText(this.summaryTitle);
+				} else {
+					summary = this.myTiddler.fields[this.summaryField];
+				}
+			}
+		} else {
+			if(this.summaryField !== &quot;&quot; &amp;&amp; this.summaryField !== &quot;text&quot;) {
+				// try defined field in current tiddler
+				var tiddler = this.wiki.getTiddler(this.getVariable(&quot;currentTiddler&quot;));
+				summary = tiddler.fields[this.summaryField];
+			} else {
+				summary = &quot;&quot;;
+			}
+		}
+	}
+   return summary;
+};
+
+/*
+Retrieve the value of the state text reference
+*/
+DetailsWidget.prototype.getStateFromReference = function() {
+    var state = this.detailsStateTitle ? this.wiki.getTextReference(this.detailsStateTitle,&quot;&quot;,this.getVariable(&quot;currentTiddler&quot;)) : &quot;&quot;;
+    return state;
+};
+
+/*
+Check all open signals, state fields/tiddlers get priority
+*/
+DetailsWidget.prototype.getOpenState = function() {
+	var result = &quot;&quot;;
+	if((this.detailsOpenDefault !== &quot;&quot; &amp;&amp; this.detailsOpenDefault !== &quot;no&quot;) 
+	    || this.detailsState === &quot;open&quot;) {
+		result = &quot;open&quot;;
+	 } 
+	if(this.detailsStateTitle !==&quot;&quot; &amp;&amp; this.detailsState !== &quot;open&quot;) {
+		result = &quot;&quot;;
+	}
+	return result;
+};
+
+/*
+Update the state text reference after click event
+*/
+DetailsWidget.prototype.updateState = function(openState) {
+	var fieldValue = &quot;false&quot;;
+	var currentTiddler = this.getVariable(&quot;currentTiddler&quot;);
+    // get the title for the (existing/new) tiddler
+	var tr = $tw.utils.parseTextReference(this.detailsStateTitle);
+	var tidTitle = tr.title || currentTiddler;
+    // is it an existing state tiddler?
+	var isStateTiddler = (tr.title === this.detailsStateTitle);
+	var hasStateTiddler = this.wiki.tiddlerExists(tr.title);
+	var currentStateTiddler = (tr.title === currentTiddler);
+	if(isStateTiddler || hasStateTiddler || (currentStateTiddler &amp;&amp; tr.field !== &quot;text&quot;)) { 
+		// Set the state field (but never overwrite the current tiddler’s text field
+		this.wiki.setText(tidTitle,tr.field,tr.index,openState);
+	} else {
+		if(!hasStateTiddler &amp;&amp; tidTitle !== currentTiddler) {
+			this.createTiddler(tidTitle);
+			this.wiki.setText(tidTitle,tr.field,tr.index,openState);
+		} else {
+			console.log (&quot;Something went wrong in updateState&quot;);
+		}
+	}
+};
+
+/*
+Create a tiddler with a title only
+*/
+DetailsWidget.prototype.createTiddler = function(tidTitle) {
+	this.wiki.addTiddler(new $tw.Tiddler(
+		this.wiki.getCreationFields(),
+		this.wiki.getModificationFields(),
+		{
+			title: tidTitle,
+			tags: []
+		}
+	));
+};
+
+/*
+Set openState according to click
+*/
+DetailsWidget.prototype.handleToggleEvent = function(event) {
+	// check if an open attribute is present
+	var newState = this.detailsDomNode.open ? &quot;&quot; : &quot;open&quot;;
+	// update only, if the node has a new state
+	if(newState !== this.detailsState) {
+		this.updateState(newState);
+	}
+};
+
+/*
+Compute the internal state of the widget
+*/
+DetailsWidget.prototype.execute = function() {
+	// Get the parameters from the attributes 
+	var tryTiddler = this.getAttribute(&quot;tiddler&quot;);
+	this.myTiddler = this.wiki.getTiddler(tryTiddler);
+	this.summaryTitle = this.myTiddler ? tryTiddler : &quot;Tiddler not found&quot;;
+	this.summaryField = this.getAttribute(&quot;field&quot;,&quot;&quot;);
+	this.detailsSummary = this.getAttribute(&quot;summary&quot;) || this.getSummary();
+	this.detailsStateTitle = this.getAttribute(&quot;state&quot;,&quot;&quot;);
+	this.detailsState = this.getStateFromReference();
+	this.detailsOpenDefault = this.getAttribute(&quot;open&quot;,&quot;&quot;);
+	this.detailsOpen = this.getOpenState();
+	this.detailsClass = this.getAttribute(&quot;class&quot;,&quot;&quot;);
+	// Construct the child widgets
+	this.makeChildWidgets();
+};
+
+/*
+Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
+*/
+DetailsWidget.prototype.refresh = function(changedTiddlers) {
+	var changedAttributes = this.computeAttributes();
+	if(changedAttributes.tiddler || changedAttributes.field || changedAttributes.summary || changedAttributes.state || changedAttributes.open || changedAttributes[&quot;class&quot;]) {
+		this.refreshSelf();
+		return true;
+	} else {
+		var refreshed = false;
+		var testState = this.getStateFromReference();
+		if(testState !== this.detailsState) {
+			// state change
+			this.refreshSelf();
+			refreshed = true;
+		} 
+		return this.refreshChildren(changedTiddlers) || refreshed;
+	}
+};
+
+exports.details = DetailsWidget;
+
+})();</pre>
+</div>
 <div created="20210210154336263" modified="20210210154352197" title="$:/SiteTitle">
 <pre>The Loft</pre>
 </div>
 <div created="20210224003753888" modified="20210224003755265" title="$:/state/image-picker/system-1880878820">
 <pre>hide</pre>
 </div>
-<div created="20210220191905934" modified="20210220233941156" title="$:/state/plugin-info-334910430-$:/core---1812962263">
-<pre>contents</pre>
+<div created="20210220191905934" modified="20240323193025496" title="$:/state/plugin-info-334910430-$:/core---1812962263">
+<pre>readme</pre>
 </div>
 <div created="20210220234251696" modified="20210305002113221" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20210220142939978" modified="20210316021805825" title="$:/state/sidebar">
+<div created="20210220142939978" modified="20240323194608721" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210220233841177" modified="20210220235628213" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20210220233841177" modified="20240323195454668" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20210220192757344" modified="20210220192757344" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20240323195513336" modified="20240323195513336" title="$:/state/tab--2074415172">
+<pre>$:/core/ui/TiddlerInfo/References</pre>
+</div>
+<div created="20210220192757344" modified="20240323162200938" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20210220235850345" modified="20210220235854535" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
@@ -10248,13 +10628,22 @@ Error message and password prompt
 <div created="20210220192759811" modified="20210220192759811" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Parsing</pre>
 </div>
-<div created="20210220233829905" modified="20210316021526529" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20240323182031378" modified="20240323182121502" title="$:/state/tab-1163638994">
+<pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
-<div created="20210220142542344" modified="20210220191826305" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Shadows</pre>
+<div created="20240323195538158" modified="20240323195538158" title="$:/state/tab-1564035512">
+<pre>$:/core/ui/TiddlerInfo/References</pre>
 </div>
-<div created="20210211035633702" modified="20220306050407763" title="$:/state/tab/sidebar--595412856">
+<div created="20240323195525991" modified="20240323195525991" title="$:/state/tab-1740748798">
+<pre>$:/core/ui/TiddlerInfo/References</pre>
+</div>
+<div created="20210220233829905" modified="20240323195936885" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
+</div>
+<div created="20210220142542344" modified="20240323182028719" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Plugins</pre>
+</div>
+<div created="20210211035633702" modified="20240323195404017" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20210220235501384" modified="20210220235604327" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10263,8 +10652,11 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[The Gates]] [[~Seek Ye First]]" title="$:/StoryList">
+<div created="20240323195354970" list="[[The Gates]] [[2024, 3/23 Entry]] [[~Seek Ye First]]" modified="20240323195532602" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20240323161736929" modified="20240323161736929" title="$:/theme">
+<pre>$:/themes/tiddlywiki/vanilla</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
 <pre>{
@@ -10375,6 +10767,9 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20240323161719825" modified="20240323161719825" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
+<pre>fluid-fixed</pre>
+</div>
 <div created="20210224003712056" modified="20210224014532126" tags="Tiddlywiki [[Structure Log]] 2021/02/23" title="2021/02/23 - Initial Thoughts on Structure">
 <pre>[img[image0.png]]</pre>
 </div>
@@ -10396,6 +10791,37 @@ What should be the structure of a Tiddler?
 #CONTENT
 
 #LINKS</pre>
+</div>
+<div created="20240323163416784" modified="20240323201114293" tags="[[Entry Log]]" title="2024, 3/23 Entry">
+<pre>&lt;p&gt;Just getting started here again after so very long. I've been contemplating long about how and why to proceed with such a thing as a public wiki, and the short of it is that,
+&lt;ol&gt;
+&lt;li&gt;IT'S PUBLIC: I want to be able to share my thoughts with others. Yes, public does mean there has to be a fair bit of filtering, but to me, the joy of sharing and the challenge of making my thoughts literate, and hopefully helpful, to others makes it worth not being able to transparently journal in. I can have another place for that.&lt;/li&gt;
+&lt;li&gt;IT'S A TIDDLYWIKI: A tool that I want to learn and promote. Being able to locally edit a one-file document of this complexity, push it through git to a make a static website, and sync it with other devices - all it is missing is a collaborative feature!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;p&gt;Well that's at least the short of the &quot;why.&quot; As for the how, that is something that will have to develop over time. I have worries about the potential size of this file growing problematic, and there are compartmentalizing solutions in sight, but they require a far seeing architect, and right now it's best to start the architecture minimal and inviting for myself and others.&lt;/p&gt;
+
+&lt;p&gt;So in that spirit, what I want to focus on is making the tiddler-entry-system. I want to start all of my thoughts in the default, dated journal tiddler (an entry log) and make that homebase - where I just open it up and start writing. Later I can excise/transclude tiddlers out of it, add tags and links, and format it better. This homebase system will help me not worry about the architecture in the moments I just need to write, and it will be a format that others can keep up with what I've been working on in a blog-like way. &lt;/p&gt;
+
+&lt;p&gt;So let's say that I am working on a thought and I decide it needs its own unique tiddler. I'll excise it out, and leave the work here for others to read and visit:&lt;/p&gt;
+
+[[Raendir]]
+&lt;$details summary=&quot;view&quot;&gt;{{Raendir}}&lt;/$details&gt;
+
+&lt;p&gt;There! Very nice.  Now what ineeds to be done to create the blog-effect is to have the default tiddlers be the last 5 or so entry posts.&lt;br&gt; For this I scoured the web a bit and was able to construct this piece of code to put into the &quot;default tiddlers&quot; field in the Control Panel:
+
+``
+[days[-30]!is[system]sort[created]tag[Entry Log]]
+``
+We'll see if that ends up working...&lt;/p&gt;
+
+&lt;p&gt;I wasted some time trying to make the HTML ``&lt;p&gt;`` tag indent 20 pixels across the whole wiki so that everything would be more readable, but when it was done I thought it looked worse. Oh well. If I ever need to indent, I'll just have to remember to add ``&lt;style&gt;p [text-indent: 20px;]&lt;/style&gt;`` to the top of the tiddler.&lt;/p&gt;
+
+
+
+
+
+</pre>
 </div>
 <div created="20210827112139693" modified="20210827114239797" tags="" title="Acts 1">
 <pre> ^^1^^I wrote the former account, Theophilus, about all that Jesus began to do and teach ^^2^^until the day he was taken up to heaven, after he had given orders by the Holy Spirit to the apostles he had chosen. ^^3^^To the same apostles also, after his suffering, he presented himself alive with many convincing proofs. He was seen by them over a forty-day period and spoke about matters concerning the kingdom of God. ^^4^^While he was with them, he declared, “Do not leave Jerusalem, but wait there for what my Father promised, which you heard about from me. ^^5^^For John baptized with water, but you will be baptized with the Holy Spirit not many days from now.”
@@ -10509,6 +10935,21 @@ Need to make this page more dynamic with transclusion. </pre>
 </div>
 <div created="20220109114928831" modified="20220109114952970" tags="[[Enchanting Intellectuals]]" title="Malcolm Guite">
 <pre></pre>
+</div>
+<div created="20240323172322036" modified="20240323181935306" tags="Names" title="Raendir">
+<pre>&lt;h2&gt;raen·dír&lt;br&gt;
+/rˈɑɛndiːr/&lt;/h2&gt; 
+
+&lt;div&gt;&lt;i&gt;Noun&lt;/i&gt;&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;literal Sindarin&lt;/b&gt;&lt;br&gt;
+a crooked man&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; relating to the Sindarin &quot;randír&quot;&lt;/b&gt;&lt;br&gt;
+a wayward pilgrim&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;relating to English&lt;/b&gt;&lt;br&gt;
+a reindeer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</pre>
 </div>
 <div created="20220109112141832" modified="20220109114203435" tags="[[Enchanting Intellectuals]]" title="Richard Rohlin">
 <pre>Richard Rohlin is a software developer, Germanic philologist, and Orthodox Christian living in Texas with his wife and children. He speaks and publishes on Germanic poetry, the Inklings, and the Sacramental Imagination.
