@@ -269,6 +269,8 @@ Error message and password prompt
 
 <li>2024, 03/30 Entry - Towards Redemptive Fantasy</li>
 
+<li>2024, 04/27 Entry - Falconer and Fiddling</li>
+
 <li>A Winter Day</li>
 
 <li>Acts 1</li>
@@ -327,7 +329,7 @@ Error message and password prompt
 
 <li>George MacDonald - Phantastes</li>
 
-<li>George Macdonald - Robert Falconer</li>
+<li>George MacDonald - Robert Falconer</li>
 
 <li>Hello World!</li>
 
@@ -11427,7 +11429,7 @@ exports.details = DetailsWidget;
 <div created="20210220191905934" modified="20240323193025496" title="$:/state/plugin-info-334910430-$:/core---1812962263">
 <pre>readme</pre>
 </div>
-<div created="20210220234251696" modified="20210305002113221" title="$:/state/showeditpreview">
+<div created="20210220234251696" modified="20240427184258766" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20210220142939978" modified="20240323194608721" title="$:/state/sidebar">
@@ -11463,8 +11465,8 @@ exports.details = DetailsWidget;
 <div created="20210220233829905" modified="20240412023604501" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
-<div created="20210220142542344" modified="20240406014115177" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Plugins</pre>
+<div created="20210220142542344" modified="20240427195659597" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Recent</pre>
 </div>
 <div created="20210211035633702" modified="20240406014113253" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
@@ -11475,7 +11477,7 @@ exports.details = DetailsWidget;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20240412023501702" list="$:/ControlPanel [[The Gates]] Dialectic [[~ You Must Vote!]] [[2024, 03/30 Entry - Towards Redemptive Fantasy]] [[2024, 03/23 Entry - Getting Started]]" modified="20240412024308399" title="$:/StoryList">
+<div created="20240427165850427" list="[[2024, 03/23 Entry - Getting Started]] [[2024, 04/27 Entry - Falconer and Fiddling]] [[The Gates]] Workshop [[The Tiddlywiki Experiment]] [[Tiddlywiki Templates]] Library [[Books I Am Reading]] [[2024, 03/30 Entry - Towards Redemptive Fantasy]]" modified="20240427201011558" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20240323161736929" modified="20240323161736929" title="$:/theme">
@@ -11615,7 +11617,7 @@ What should be the structure of a Tiddler?
 <div created="20240331035731604" modified="20240331035848195" title="2024 Entry Log">
 <pre>&lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;] +[sort[title]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20240323163416784" modified="20240406004235541" tags="[[Entry Logs]] [[2024 Entry Log]]" title="2024, 03/23 Entry - Getting Started">
+<div created="20240323163416784" modified="20240427192537259" tags="[[Entry Logs]] [[2024 Entry Log]]" title="2024, 03/23 Entry - Getting Started" type="text/vnd.tiddlywiki">
 <pre>&lt;p&gt;Just getting started here again after so very long. I've been contemplating long about how and why to proceed with such a thing as a public wiki, and the short of it is that,
 &lt;ol&gt;
 &lt;li&gt;IT'S PUBLIC: I want to be able to share my thoughts with others. Yes, public does mean there has to be a fair bit of filtering, but to me, the joy of sharing and the challenge of making my thoughts literate, and hopefully helpful, to others makes it worth not being able to transparently journal in. I can have another place for that.&lt;/li&gt;
@@ -11633,12 +11635,12 @@ What should be the structure of a Tiddler?
 
 &lt;p&gt;There! Very nice.  Now what ineeds to be done to create the blog-effect is to have the default tiddlers be the last 5 or so entry posts.&lt;br&gt; For this I scoured the web a bit and was able to construct this piece of code to put into the &quot;default tiddlers&quot; field in the Control Panel:
 
-``
+`
 [days[-30]!is[system]sort[created]tag[Entry Log]]
-``
+`
 We'll see if that ends up working...&lt;/p&gt;
 
-&lt;p&gt;I wasted some time trying to make the HTML ``&lt;p&gt;`` tag indent 20 pixels across the whole wiki so that everything would be more readable, but when it was done I thought it looked worse. Oh well. If I ever need to indent, I'll just have to remember to add ``&lt;style&gt;p [text-indent: 20px;]&lt;/style&gt;`` to the top of the tiddler.&lt;/p&gt;
+&lt;p&gt;I wasted some time trying to make the HTML `&lt;p&gt;` tag indent 20 pixels across the whole wiki so that everything would be more readable, but when it was done I thought it looked worse. Oh well. If I ever need to indent, I'll just have to remember to add `&lt;style&gt;p {text-indent: 20px;}&lt;/style&gt;` to the top of the tiddler.&lt;/p&gt;
 
 &lt;p&gt; As of now I think I can finally get to some writing&lt;/p&gt;
 
@@ -11669,6 +11671,15 @@ We'll see if that ends up working...&lt;/p&gt;
 &lt;p&gt;I confess, and my pursuits betray, that I would much rather live in another world. And I think I am not at all alone in this sentiment, although I'm sure there is no shortage of differing opinions about what that world ought to be like. But what I am struggling with is that, apparently (and I say this knowing that I am relatively more alone in this assertion) that other reality is invading this one, and has been doing so for a long time. On paper, so to speak, this invasion is the most riveting, innervating, swashbuckling, heart-rending drama. But away from the pulpit and the bread and wine, here, domestically in all the excesses of America, even among Christian brothers, I can't seem to consistently cut through to the vein of life. &lt;/p&gt;
 
 &lt;p&gt;So I'll wander around this subject some more later. I am greatly encouraged to have started this walk in writing finally.&lt;/p&gt;</pre>
+</div>
+<div created="20240427192551923" modified="20240427201629700" tags="[[2024 Entry Log]] [[Entry Logs]]" title="2024, 04/27 Entry - Falconer and Fiddling">
+<pre>&lt;p&gt;
+Started working on my backlog of book notes today.
+&lt;/p&gt;
+[[George MacDonald - Robert Falconer]]
+&lt;$details summary=&quot;view&quot;&gt;{{George MacDonald - Robert Falconer}}&lt;/$details&gt;
+
+In the course of writing I discovered the `&lt;pre&gt;` tag out of neccessity. I put all the block quotes from the book inside and it allowed me to format indents and linebreaks as I wish. Handy to know.</pre>
 </div>
 <div created="20240331023800828" modified="20240331024104107" title="A Winter Day">
 <pre>&lt;p&gt;
@@ -11850,16 +11861,47 @@ Davenant Intitute</pre>
 <div created="20240405220535500" modified="20240405220557843" tags="[[Books I Am Reading]]" title="George MacDonald - Phantastes">
 <pre></pre>
 </div>
-<div created="20210228050335716" modified="20240405220400057" tags="[[Books I Am Reading]]" title="George Macdonald - Robert Falconer">
-<pre>BOOK TIDDLER STRUCTURE:
+<div created="20210228050335716" modified="20240427201303346" tags="[[Books I Have Read]]" title="George MacDonald - Robert Falconer" type="text/vnd.tiddlywiki">
+<pre>&lt;style&gt;pre {font-family:'Helvetica'}&lt;/style&gt;
+&lt;p&gt;
+Published in 1864
+&lt;/p&gt;
+&lt;p&gt;
+&quot;The Musicians Quest&quot;, or also known as &quot;Robert Falconer&quot;, is a story I like quite a lot. It's one of those coming of age tales, like [[Men of Iron|Howard Pyle - Men of Iron]], that find a place in my heart despite at times rubbing against my current deposit of faith. Any beauty that gets under my skin like this I hold tentitively, but in special regard, as something capable tease out more growth in my faith.
+&lt;/p&gt;
+&lt;p&gt;
+To sum up briefly, it's a sentimental tale about a boy growing up in 1800s Scotland learning how to have a hopeful faith under his strict, ultra-calvanist grandma. The whole book is a wrestle with God for Robert as he struggles to deal with the teaching of eternal perdition. MacDonald is dancing on the edge of doctrines here, and comes down on the side of a sort of anti-clergy, spirit-led, anarchic vision for Christianity, which I think limits the artfulness of the book and at times makes it more of a pulpit for Macdonalds hopeful universalism and his desired ecclesiology. But there are some wonderful moments to highlight that will stick with me.
+&lt;/p&gt;
+&lt;p&gt;
+The mystery and boyhood purity of the first half of the book was far and away the best part. Macdonald does so well in creating a vivid spiritual perception through the eyes of young Robert. I love how some chapters suddenly switch to feel like a fairy tale bursting into normal life.
+&lt;/p&gt;
+&lt;pre&gt;
+&lt;blockquote&gt;	When he exited the kitchen door to begin his trek upward with the scanty provisions, he was struck with amazement and for a moment a fresh dose of fear. A light was shining into the hall from the stair. He knew it could not be Grannie since he had just left her safe in bed, and he heard Betty snoring in her own den which opened from the kitchen. He thought it might be Shargar, who had grown impatient, but how he had got hold of a light he could not think.
+	As soon as he turned the corner, however, the mystery grew still more profound. At the top of the broad, low stair stood the form of a woman with candle in her hand, gazing about as if wondering which way to go. The light fell full upon her face, one of such beauty that, with her dress, which was white - being in fact a nightgown - and her hair, which was hanging loose about her shoulders and down to her waist, Robert at once concluded (his reasoning faculties already shaken by the events of the night) that she was an angel come down to comfort he grannie. He kneeled involuntarily ar the foot of the stair, gazing up at her, with the cakes in one hand and the mug of water in the other, like an offering. Whether he had closed his eyes or bowed his head he could not say, but he suddenly became aware that the angel had vanished - he knew not how. This only confirmed his assurance that it was an angel. 
+	- Chapter 5
+&lt;/blockquote&gt;
+&lt;blockquote&gt;	The dragon flew splendidly now, and it's strength was mighty. It was Robert's custom to drive a stake into the ground, slanting it against the wind, and thereby tether the animal, as if it wew up there grazing in its own natural region. Then he would lie down by the stake and read &lt;i&gt;The Arabian Nights&lt;/i&gt;, which he had discovered at the farm, every now and them casting a glance upward at the creature alone in the waste air, yet all in his power by the string at his side. Somehow the high-flying dragon was a bond between him and the blue; he seemed nearer to the sky while it flew, or at least the heaven seemed less inacessible. 
+	- Chapter 17
+&lt;/blockquote&gt;
+&lt;blockquote&gt;	Therewith Robert retreated to his garret.
+	When he opened the door of it, the first thing he saw was the string up in the air - still tugging the bedpost. Whether it was from the stinging thought that a true sky-soarer, the violin, had been devoured by the jaws of the fire-devil or from a dim feeling that the time of kites was gone by and manhood on the threshold, I cannot tell. But there was no longer any significance in the outward and visible sign of the dragon. He drew his knife from his pocket and with one downward stroke cut the string in twain. Away went the dragon, free, like a prodigal, to his ruin. 
+	And with the dragon afar, into the past flew the childhood of Robert Falconer. He made one remorseless dart ater the string as it swept out of the skylight, but it was gone. And nevermone, save in twilight dreams, did he lay hold on his childhood again. 
+	- Chapter 18
+&lt;/blockquote&gt; 
+&lt;blockquote&gt;	Robert had not the vaguest fancy that God was with him - the Spirit of the Father groaning with the spirit of the boy. But God &lt;i&gt;was&lt;/i&gt; with him, and was indeed victorious in the boy when he rose from his knees - for the last time, as he though - saying, &quot;I cannot yeild. I cannot pray for special favor from God. I cannot pray for the assurance that God is my private friend while he capriciously turns his back on others and dooms them to an eternity in hell. I will pray no more. 
+	- Chapter 21
+&lt;/blockquote&gt;
+&lt;blockquote&gt;	I never knew another man whose ordinary habits were so symbolic of his spiritual depth, or whose enjoyment of the sights of his eyes and the hearing of his ears was so much informed by his highest feelings. He looked upon all human affairs from the vantagepoint of the spiritual, as from their church spires he looked down on the red roofs of Antwerp, on the black roofs of Cologne, on the gray roofs of Strasburg, on the brown roofs of Basel. 
+	He was taken ill at Valance and lay there for two weeks, oppressed with some kind of low fever. On night he awoke from a refreshing sleep, but he could not sleep again. It seemed to him afterward as if he had been lying waiting for something. A faint musical rain had gradually invaded his hearing, yet the night was clear and the moon was shining on his window. The sound came nearer and soon revealed itself as, instead of rain, a delicate tinkling of bells. It drew nearer still and nearer till at length a slow torrent of tinklings went past his window in the street below. A great multitude of sheep was being moved to new quarters in the night. But to his heart they were the messengers of the Most High. For into that heart, soothed by their thin harmony, at that moment came the words, ulooked for, &quot;My peace I give unto you.&quot; The sounds died slowly away in the distance, fainting out of the air, even as they had grown upon it, but the words remained. 
+	- Chapter 31
+&lt;/blockquote&gt;
+&lt;/pre&gt;
+&lt;p&gt;
+Astonishingly heart-rending passages. I am in debt to have read them. 
+&lt;/p&gt;
 
-#Title, tag with “have read”, “am reading”, or “want to read”
 
-#Context info - Author, date published, synopsis, interesting facts
-
-#Notes and Quotes Chapter by Chapter
-
-#Review/Overall Thoughts</pre>
+</pre>
 </div>
 <div created="20210210160049240" modified="20210210160124796" tags="" title="Hello World!">
 <pre>This is a test page. </pre>
