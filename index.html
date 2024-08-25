@@ -299,6 +299,8 @@ Error message and password prompt
 
 <li>$:/state/tab--697582678</li>
 
+<li>$:/state/tab--72418429</li>
+
 <li>$:/state/tab--86143343</li>
 
 <li>$:/state/tab--959111941</li>
@@ -362,6 +364,10 @@ Error message and password prompt
 <li>Dante (tr. Mark Musa) - The Divine Comedy</li>
 
 <li>Dialectic</li>
+
+<li>Draft of 'Books I Have Read'</li>
+
+<li>Draft of 'Library'</li>
 
 <li>Draft of 'Transclusion'</li>
 
@@ -11597,6 +11603,9 @@ exports.details = DetailsWidget;
 <div created="20240412023605548" modified="20240412024252894" title="$:/state/tab--697582678">
 <pre>$:/core/ui/ControlPanel/Settings/CodeMirror</pre>
 </div>
+<div created="20240824181246260" modified="20240824181315392" title="$:/state/tab--72418429">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
+</div>
 <div created="20210220235850345" modified="20210220235854535" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
@@ -11618,8 +11627,8 @@ exports.details = DetailsWidget;
 <div created="20210220142542344" modified="20240427195659597" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Recent</pre>
 </div>
-<div created="20210211035633702" modified="20240729223622894" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20210211035633702" modified="20240824181253957" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210220235501384" modified="20240729032622591" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
@@ -11627,7 +11636,7 @@ exports.details = DetailsWidget;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20240815214754914" list="[[Tree and Leaf pp. 52]] [[J.R.R.Tolkien - On Fairy Stories]] [[J.R.R.Tolkien - Tree and Leaf]] [[The Gates]] Library" modified="20240815214754914" title="$:/StoryList">
+<div created="20240824181214629" list="[[Tree and Leaf pp. 52]] [[J.R.R.Tolkien - On Fairy Stories]] [[The Gates]] [[Draft of 'Library']] [[George MacDonald - Robert Falconer]] [[Draft of 'Books I Have Read']]" modified="20240824183214314" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20240323161736929" modified="20240323161736929" title="$:/theme">
@@ -12042,6 +12051,20 @@ A guiltless heart though? Here is what I grant as a bridge: there is one Guiltle
 
 </pre>
 </div>
+<div created="20240405221207186" draft.of="Books I Have Read" draft.title="Books I Have Read" modified="20240824183345892" title="Draft of 'Books I Have Read'">
+<pre>&lt;&lt;list-links filter:&quot;[tag&lt;currentTiddler&gt;] +[sort[title]]&quot;&gt;&gt;
+</pre>
+</div>
+<div created="20210228045700503" draft.of="Library" draft.title="Library" modified="20240824183540946" title="Draft of 'Library'">
+<pre>//This place is probably going to be closer to the generic concept of a wiki.//
+
+Note to the Reader: If the link begins with an asterisk (*), there is nothing to read yet on that tiddler.
+
+&lt;$details summary=&quot;Books I Have Read&quot;&gt;{{Books I Have Read}}&lt;/$details&gt;
+&lt;$details summary=&quot;Books I Am Reading&quot;&gt;{{Books I Am Reading}}&lt;/$details&gt;
+&lt;$details summary=&quot;Books I Want To Read&quot;&gt;{{Books I Want To Read}}&lt;/$details&gt;
+</pre>
+</div>
 <div created="20240406013953042" draft.of="Transclusion" draft.title="Transclusion" modified="20240712221218730" title="Draft of 'Transclusion'">
 <pre>&lt;p&gt;This code works with the &quot;Details Widget&quot; that can be found &lt;a href=&quot;https://tid.li/tw5/hacks.html#DetailsWidget&quot;&gt;here&lt;/a&gt;. It's what allows the extendable &quot;view&quot; tabs that you may see around here.  &lt;br&gt;
 `&lt;$details summary=&quot;view&quot;&gt;{{YOUR LINK HERE}}&lt;/$details&gt;`
@@ -12057,7 +12080,7 @@ This code will make a list of all tiddlers tagged by the current tiddler's name.
 <div created="20220109115218512" modified="20220109115249116" tags="[[Enchanting Intellectuals]]" title="G.K. Chesterton">
 <pre></pre>
 </div>
-<div created="20210228050335716" modified="20240427210452280" tags="[[Books I Have Read]]" title="George MacDonald - Robert Falconer" type="text/vnd.tiddlywiki">
+<div created="20210228050335716" modified="20240824183430079" tags="[[Books I Have Read]] Excerpt" title="George MacDonald - Robert Falconer" type="text/vnd.tiddlywiki">
 <pre>&lt;style&gt;pre {font-family:'Helvetica'}&lt;/style&gt;
 &lt;p&gt;
 Published in 1864
@@ -12106,8 +12129,14 @@ Astonishingly heart-rending passages. I am in debt to have read them.
 <div created="20220109115133786" modified="20220109115151598" tags="[[Enchanting Intellectuals]]" title="J.R.R. Tolkien">
 <pre></pre>
 </div>
-<div created="20240815215830859" modified="20240815220119651" tags="[[J.R.R.Tolkien - Tree and Leaf]]" title="J.R.R.Tolkien - On Fairy Stories">
-<pre></pre>
+<div created="20240815215830859" modified="20240824185701468" tags="[[J.R.R.Tolkien - Tree and Leaf]]" title="J.R.R.Tolkien - On Fairy Stories">
+<pre>
+&lt;$details summary=&quot;Excerpts&quot;&gt;
+&lt;$list filter=&quot;[tag[J.R.R.Tolkien - On Fairy Stories]tag[Excerpt]]+[sort[title]]&quot;&gt;
+
+&lt;$transclude mode=&quot;block&quot;/&gt;
+&lt;/$list&gt;
+&lt;/$details&gt;</pre>
 </div>
 <div created="20240815214823598" modified="20240815220558371" tags="[[Books I Have Read]]" title="J.R.R.Tolkien - Tree and Leaf" type="text/vnd.tiddlywiki">
 <pre>&lt;p&gt;
